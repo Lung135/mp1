@@ -2,15 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MP1 Starter</title>
+  <title>Lucas Ung MP1</title>
   <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <div class="test"> Hello, my name is Lucas Ung.</div>
-  <div class="cat">
-    <img src="./media/cat.jpg" alt="Cat">
+
+  <nav class="navbar">
+    <div id="navbar-links">
+    <a href="#hello">Hello</a>
+    <a href="#about">About</a>
+    <a href="#photos">Photos</a>
+    <a href="#movie">Movie</a>
+    <a href="#work">Work</a>
+    </div>
+  </nav>
+
+  <div id="hello">
+    <div class="welcome">
+      <h1>Lucas Ung</h1>
+      <h2>B.S. Computer Science Class of 2017</h2>
+      <h3>University of Illinois at Urbana-Champaign</h3>
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="title">
+      <h1>About Me</h1>
+    </div>
+    <p>
+      Hello, my name is Lucas Ung. Lorem ipsum dolor sit amet, at sit malis ocurreret torquatos. Ea quot nonumes cum, causae impedit sententiae mea ne. Dolore delenit dissentiunt ut sit. Pri dolor nostrud ne, sed libris disputationi an. Mel ex veri libris, modus numquam vel an. Eu quo noster dictas. Id legendos complectitur sit. 
+    </p>
+  </div>
+
+  <div id="photos">
+    <div id="carousel">
+      <div class="carousel-horse" id="horse1"></div>
+    </div>
+    <a href="#" class="carousel-btn" id="left-btn">left</a>
+    <a href="#" class="carousel-btn" id="right-btn">right</a>
+    </div>
+  </div>
+
+  <div id="movie">
+    <div class="moviePanel">
+      <video src="./media/PaintVideo.mp4" autoplay="autoplay" muted="muted" loop></video>
+    </div>
+  </div>
+  <!--Video Source: https://vimeo.com/95603492 -->
+
+  <div id="work">
+    <div class="title">
+    <h1>Work Experience</h1>
+    </div>
+    <div class="col-left">
+      <h2>Goldman Sachs</h2>
+      <h3>Incoming Technology Summer Analyst</h3>
+      <p>I'll do something. Lorem ipsum dolor sit amet, at sit malis ocurreret torquatos. Ea quot nonumes cum, causae impedit sententiae mea ne. Dolore delenit dissentiunt ut sit. Pri dolor nostrud ne, sed libris disputationi an. Mel ex veri libris, modus numquam vel an. Eu quo noster dictas. Id legendos complectitur sit.</p>
+    </div>
+    <div class="col-center">
+      <h2>Fieldglass</h2>
+      <h3>Product Development Intern 2015</h3>
+      <p>I did work there. Lorem ipsum dolor sit amet, at sit malis ocurreret torquatos. Ea quot nonumes cum, causae impedit sententiae mea ne. Dolore delenit dissentiunt ut sit. Pri dolor nostrud ne, sed libris disputationi an. Mel ex veri libris, modus numquam vel an. Eu quo noster dictas. Id legendos complectitur sit.</p>
+    </div>
+    <div class="col-right">
+      <h2>The Edgebrook Club</h2>
+      <h3>Swim Coach 2013-2014</h3>
+      <p>I taught kids how to swim. Lorem ipsum dolor sit amet, at sit malis ocurreret torquatos. Ea quot nonumes cum, causae impedit sententiae mea ne. Dolore delenit dissentiunt ut sit. Pri dolor nostrud ne, sed libris disputationi an. Mel ex veri libris, modus numquam vel an. Eu quo noster dictas. Id legendos complectitur sit.</p>
+    </div>
+  </div>
+
+  <div id="footer">
+    <h3>Click for more!</h3>
+  </div>
+
+  <div id="modal">
+    <div id="modalContent">
+      <h3>Visit me on Facebook!</h3>
+      <a href="https://www.facebook.com/lucas.ung.3">
+        <img src="./media/facebook-logo-vector.png">
+      </a>
+      <h3>Or on LinkedIn!</h3>
+      <a href="https://www.linkedin.com/in/lucasung">
+        <img src="./media/linkedin-logo-vector.png">
+      </a>
+      <div id="exit">
+        Go back
+      </div>
+    </div>
   </div>
 
   <script src="lib/jquery-2.1.3.min/index.js"></script>

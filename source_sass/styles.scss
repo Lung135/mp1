@@ -4,3 +4,299 @@
 @import "variables";
 @import "mixins";
 @import "base";
+
+.cat {
+	width: 100%;
+}
+
+h1, h2, h3, h4 {
+	font-family: $font_heading;
+	padding-top: 15px;
+}
+
+.navbar {
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	z-index: 1000;
+	background: $darkgrey;
+}
+
+#navbar-links {
+	float: center;
+	position: relative;
+	margin-top: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#navbar-links a {
+	font-size: 20px;
+	text-align: center;
+	color: $lightgray;
+	text-decoration: none;
+
+	padding-left: 12px;
+	padding-right: 12px;
+	font-family: $font_heading;
+/*	border-bottom: 2px solid $lightgray;
+	border-top: 2px solid $lightgray;*/
+}
+
+#firstLink {
+	color: $lightblue;
+}
+
+#navbar-links a:hover {
+	border-bottom: 2px solid $white;
+	border-top: 2px solid $white;
+	color: $white;
+}
+
+#hello {
+	background-image: url("../media/seattle2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	/*overflow: hidden;*/
+	margin-top: 80px;
+	height: 650px;
+}
+
+#hello .welcome {
+	position: absolute;
+	top: 200px;
+	margin-top: -80px;
+	height: 200px;
+	width: 100%;
+	text-align: center;
+}
+
+#hello .welcome h1 {
+	text-align: center;
+	color: $offwhite;
+	font-size: 120px;
+}
+
+#hello .welcome h2 {
+	text-align: center;
+	color: $offwhite;
+	line-height: 45px;
+	font-size: 40px;
+}
+
+#hello .welcome h3 {
+	text-align: center;
+	color: $offwhite;
+	font-size: 30px;
+}
+
+#about {
+	height: 400px;
+	background-color: $lightergray;
+	position: relative;
+}
+
+#about p {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px;
+	margin: 0 auto;
+	height: 400px;
+	font-size: 16px;
+	font-family: $font-primary;
+
+	width: 66%;
+}
+
+#photos {
+	width: 100%;
+	height: 500px;
+
+	background-color: $gray;
+	position: relative;
+	overflow: hidden;
+}
+
+#carousel .carousel-horse {
+	width: 100%;
+	height: 600px;
+	background-size: 100% 100%;
+	float: left;
+}
+
+#carousel {
+	width: 400%;
+	height: 500px;
+
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.carousel-btn {
+	top: 250px;
+	position: absolute;
+	z-index: 5;
+	text-decoration: none;
+	font-family: $font_heading;
+	font-size: 50px;
+	color: $lightergray;
+}
+.carousel-btn:hover {
+	color: $darkgrey;
+}
+#left-btn {
+	left: 5px;
+}
+#right-btn {
+	right: 5px;
+}
+
+#horse1 {
+	background: url("../media/pano.jpg");
+}
+
+#work {
+	height: 400px;
+	background-color: $offwhite;
+	position: relative;
+	text-align: center;
+	font-family: $font_heading;
+}
+
+.title h1 {
+	font-size: 50px;
+	padding-top: 15px;
+	color: $white;
+	text-align: center;
+}
+
+#work h2 {
+	font-size: 30px;
+	color: $black;
+	line-height: 60px;
+}
+
+#work h3 {
+	font-size: 20px;
+	color: $darkgrey;
+	line-height: 40px;
+}
+
+#work p {
+	font-size: 16px;
+	font-family: $font_primary;
+	color: $black;
+}
+
+#work .col-left {
+	width: 32%;
+	float: left;
+	padding-left: 1%;
+}
+
+#work .col-center {
+	width: 32%;
+	display: inline-block;
+}
+
+#work .col-right {
+	width: 32%;
+	float: right;
+	padding-right: 1%;
+}
+
+#movie {
+	background-color: $darkgrey;
+	height: auto;
+	width: 100%;
+}
+
+.moviePanel video {
+	position: relative;
+	width: 100%;
+}
+
+#movie h1 {
+	position: relative;
+	margin: 0 auto;
+	font-size: 80px;
+	padding-top: 10px;
+	color: $white;
+	text-align: center;
+	font-family: $font_heading;
+}
+
+#footer {
+	width: 100%;
+	bottom: 0;
+	background-color: $darkgrey;
+	height: 40px;
+}
+
+#footer:hover {
+	background-color: $gray;
+}
+
+#footer h3 {
+	position: relative;
+	padding-top: 5px;
+	font-size: 30px;
+	color: $lightergray;
+	font-family: $font_heading;
+	text-align: center;
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: $black;
+	z-index: 90000;
+}
+#modal {
+	height: 300px;
+	width: 500px;
+	position: fixed;
+	background: $white;
+	z-index: 90001;
+	display: none;
+
+	left: 50%;
+	transform: translateX(-50%);
+
+	top: 80px;
+
+}
+#modalContent {
+	padding: 10%;
+	position: relative;
+	text-align: center;
+}
+#modalContent a img {
+	max-height: 30px;
+	max-width: 30px;
+}
+#modalContent h3 {
+	font-size: 30px;
+}
+#exit {
+	font-family: $font_heading;
+	font-size: 30px;
+	margin: 0 auto;
+}
+#dimmer {
+	width: 100%;
+	height: 100%;
+	background-color: $black;
+	display: none;
+	opacity: .3;
+	z-index: 90000;
+}
